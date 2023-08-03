@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap");
+* {
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+body {
+  background-image: linear-gradient(
+    to right,
+    hsl(214, 47%, 23%),
+    hsl(237, 49%, 15%)
+  );
+  overflow: hidden;
+  height: 100vh;
+  position: relative;
+}
+a{
+    text-decoration: none;
+}
+.title {
+  width: 90%;
+  margin: 50px auto;
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  outline: 1px solid hsl(217, 16%, 45%);
+  padding: 20px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.container > div{
+    border-radius: 20% 20% 0 0;
+    -webkit-border-radius: 20% 20% 0 0;
+    -moz-border-radius: 20% 20% 0 0;
+    -ms-border-radius: 20% 20% 0 0;
+    -o-border-radius: 20% 20% 0 0;
+    overflow: hidden;
+    background-color: #43488a;
+    margin-top: -4px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.container > div img{
+    width: 250px;
+    transition-duration: .5s;
+}
+.container > div img:hover{
+    scale: 1.1;
+}
+.container > div .details{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+    z-index: 100;
+}
+.container > div .details .two a{
+    cursor: pointer;
+    color: white;
+    transition-duration: .4s;
+}
+.container > div .details .two a:hover{
+    color: red;
+}
+.chose{
+    width: 40%;
+    background-color: #43488a;
+    padding: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin: 40px auto;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+.thunder{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    z-index: -1;
+}
+@media (max-width: 860px) {
+    .title{
+        font-size: 20px;
+    }
+    .container > div{
+        width: 150px;
+    }
+    .container > div img{
+        width: 100%;
+    }
+    .container > div .details{
+        font-size: 10px;
+    }
+    .chose{
+        font-size: 10px;
+    }
+}
